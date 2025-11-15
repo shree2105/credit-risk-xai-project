@@ -42,4 +42,13 @@ The project includes:
 ---
 
 ## Repository Structure
-
+credit-risk-xai-project/
+│
+├── credit_risk_project.ipynb # Full Colab notebook with code
+├── README.md # Overview
+├── report.md # Final analysis report
+├── bias_audit_results.txt # Fairness audit results
+├── shap_summary_plot.png # Global SHAP
+├── shap_local_example_1.png # Optional
+├── requirements.txt # Dependencies
+└── data/ # Your dataset (if allowed)
