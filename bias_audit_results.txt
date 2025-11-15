@@ -1,0 +1,36 @@
+BIAS AUDIT RESULTS
+===================
+
+Sensitive Attribute 1: Income Group (Low vs High)
+-------------------------------------------------
+TPR (Low Income):        0.78
+TPR (High Income):       0.84
+Equal Opportunity Diff:  -0.06
+
+Interpretation:
+The model is slightly less sensitive to true defaults among low-income borrowers.
+A negative EOD indicates possible unfair disadvantage to the low-income subgroup.
+
+-------------------------------------------------
+
+Sensitive Attribute 2: Home Ownership (Rent vs Mortgage)
+--------------------------------------------------------
+TPR (Rent):              0.80
+TPR (Mortgage):          0.86
+Equal Opportunity Diff:  -0.06
+
+Interpretation:
+Borrowers with mortgages receive marginally better recognition of true defaults.
+Potential risk of indirect socioeconomic bias.
+
+--------------------------------------------------------
+
+Mitigation methods recommended:
+- Group-specific thresholding
+- Reweighting sensitive groups during training
+- Incorporating fairness constraints in the loss function
+- Post-processing adjustments of predicted probabilities
+
+Summary:
+Both income and home ownership groups show small fairness deviations.
+Further action recommended before deployment.
